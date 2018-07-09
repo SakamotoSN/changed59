@@ -24,6 +24,13 @@ bot.login(process.env.TOKEN);
 
 
 bot.on('message', message => {
+    
+if (message.content === ".teste"){
+    message.channel.send(`Testing message.`, {
+        files: [
+          "./image/rrjd8p.png"
+        ]
+      })}
 
 }
 )
