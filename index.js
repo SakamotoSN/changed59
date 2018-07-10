@@ -9,7 +9,7 @@ const db = low(adapter);
 
 db.defaults({ histoires: [],  xp: []}).write()
 
-var prefix = ("m!")
+var prefix = ("sigbot")
 
 bot.on('ready', function() {
     bot.user.setUsername("MagicBot")
@@ -21,26 +21,16 @@ bot.login(process.env.TOKEN);
 
 
 bot.on('message', message => {
+    if(message.content.startsWith(prefix + "DM")) {
+        let messageToSend = message.content.split(" ").slice(2).join(" ");
+        let userToSend = message.mentions.users.first();
 
-        if(message.content.startsWith(prefix + "feu")){
-            if(messagementions.users) {
-            const embed = new Discord.RichEmbed()
-            .setTitle(``)
-            .setThumbnail(message.author.avatarURL)
-            .setDescription(`${message.author} lance la capacité **Feu** sur ${message.mentions.users.first()} !\nDégâts : **25** pv`)
-            .setColor(0xcc0099)
-            .setImage("https://orangemushroom.files.wordpress.com/2014/04/ignition-effect.gif")
-            
-            message.channel.send({embed})
-        }else{ 
-                   const embed = new Discord.RichEmbed()
-            .setTitle(``)
-            .setThumbnail(message.author.avatarURL)
-            .setDescription(`${message.author} lance la capacité **Feu** sur personne !\nDégâts : **25** pv`)
-            .setColor(0xcc0099)
-            .setImage("https://github.com/hugo59191/teste/blob/master/image/rrjd8p.png")
-            
-            message.channel.send({embed})}
+        userToSend.send(`${message.author.username} vous a envoter un message!\n${messageToSend}`);
+        message.delete();
+        message.channel.send(`**${message.author}** , votre message a bien eter envoyer a **${message.mentions.users.first().username}** :D`)
+    }else{
+        
+
     }
 }
 )
