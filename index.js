@@ -39,7 +39,7 @@ bot.on('message', message => {
         .setThumbnail(message.author.avatarURL)
         .setDescription(`${message.author} lance la capacité **Feu** sur personne !\nDégâts : **25** pv`)
         .setColor(0xcc0099)
-        .setImage("./image/rrjd8p.png")
+        .setImage("https://github.com/hugo59191/teste/blob/master/image/rrjd8p.png")
         
         message.channel.send({embed})
 
