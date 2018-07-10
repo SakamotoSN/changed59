@@ -32,17 +32,15 @@ bot.on('message', message => {
             .setImage("https://orangemushroom.files.wordpress.com/2014/04/ignition-effect.gif")
             
             message.channel.send({embed})
-        }
-    }else{
-        const embed = new Discord.RichEmbed()
-        .setTitle(``)
-        .setThumbnail(message.author.avatarURL)
-        .setDescription(`${message.author} lance la capacité **Feu** sur personne !\nDégâts : **25** pv`)
-        .setColor(0xcc0099)
-        .setImage("https://github.com/hugo59191/teste/blob/master/image/rrjd8p.png")
-        
-        message.channel.send({embed})
-
+        }else{ 
+                   const embed = new Discord.RichEmbed()
+            .setTitle(``)
+            .setThumbnail(message.author.avatarURL)
+            .setDescription(`${message.author} lance la capacité **Feu** sur personne !\nDégâts : **25** pv`)
+            .setColor(0xcc0099)
+            .setImage("https://github.com/hugo59191/teste/blob/master/image/rrjd8p.png")
+            
+            message.channel.send({embed})}
     }
 }
 )
