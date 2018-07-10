@@ -29,7 +29,8 @@ bot.on('message', message => {
         message.delete();
         message.channel.send(`**${message.author}** , votre message a bien eter envoyer a **${message.mentions.users.first().username}** :D`)
     }else{
-        
+        message.delete();  
+        message.channel.send(`error`)
 
     }
 }
