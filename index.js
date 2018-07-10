@@ -22,22 +22,6 @@ bot.login(process.env.TOKEN);
 
 bot.on('message', message => {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         if(message.content.startsWith(prefix + "feu")){
             if(messagementions.users) {
             const embed = new Discord.RichEmbed()
@@ -55,7 +39,7 @@ bot.on('message', message => {
         .setThumbnail(message.author.avatarURL)
         .setDescription(`${message.author} lance la capacité **Feu** sur personne !\nDégâts : **25** pv`)
         .setColor(0xcc0099)
-        .setImage(file ["./image/rrjd8p.png"])
+        .setImage("./image/rrjd8p.png")
         
         message.channel.send({embed})
 
