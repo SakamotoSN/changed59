@@ -46,8 +46,8 @@ if (message.content === prefix + "trad" ){
 "map 41 :ballot_box_with_check: (traduction donner par Mister.Hex)\nmap 42 :ballot_box_with_check: (traduction donner par Mister.Hex)\nmap 43 :x:\nmap 44 :x:\nmap 45 :x:\nmap 46 :x:\nmap 47 :x:\nmap 48 :x:\nmap 49 :x:\nmap 50 :x:\nmap 51 :x:\nmap 52 :x:\nmap 53 :x:\nmap 54 :x:\nmap 55 :x:\nmap 56 :x:\nmap 57 :x:\nmap 58 :x:\nmap 59 :x:\nmap 60 :x:")
 .addField("61-82",
 "map 61 :x:\nmap 62 :x:\nmap 63 :x:\nmap 64 :x:\nmap 65 :x:\nmap 66 :x:\nmap 67 :x:\nmap 68 :x:\nmap 69 :x:\nmap 70 :x:\nmap 71 :x:\nmap 72 :x:\nmap 73 :x:\nmap 74 :x:\nmap 75 :x:\nmap 76 :x:\nmap 77 :x:\nmap 78 :x:\nmap 79 :x:\nmap 80 :x:\nmap 81 :white_check_mark:\nmap 82 :white_check_mark:")  
-.addField("ㅤㅤㅤㅤㅤㅤ",
-"pas encore commencer :3")
+.addField("i̴̻͉͝ņ̴̺͒̊̎c̵͇͈͂̐̀ő̵͚͍͈̞ṋ̶̢̟͖̂n̵͈̾̈̕u̸̟̽",
+"f̴̯̊ĩ̵͈c̵͙̊h̵͙͋i̸̮̊ȩ̸̅r̸̗̉ ̴̡̚ï̶̭n̷̗͊ẗ̷͎́r̶͘͜o̴͓͝u̶̘̔v̸͓̔a̵̠͑b̸̢̌l̷͇̑e̷̘̓")
 message.channel.send({embed});
 }
 }     
