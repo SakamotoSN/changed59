@@ -38,7 +38,7 @@ bot.on('message', message => {
     .setDescription("fait : :white_check_mark:\na verifier : :ballot_box_with_check: \nnon fait : :x:\nprobleme : :no_entry:")
     .setFooter("(metre ici le pourcentage)")
     .addField("1-20",
-      "map 1 : :ballot_box_with_check:\nmap 2 : :ballot_box_with_check:\nmap 3 : :ballot_box_with_check:\nmap 4 : :ballot_box_with_check:\nmap 5 : :ballot_box_with_check:\nmap 6 : :ballot_box_with_check:\nmap 7 : :ballot_box_with_check:\nmap 8 : :ballot_box_with_check:\nmap 9 : :ballot_box_with_check:\nmap 10 : :ballot_box_with_check:\nmap 11 : :ballot_box_with_check:\nmap 12 : :ballot_box_with_check:\nmap 13 :ballot_box_with_check:\nmap 14 :ballot_box_with_check:\nmap 15 :ballot_box_with_check:\nmap 16 :ballot_box_with_check:\nmap 17 :ballot_box_with_check:\nmap 18 :ballot_box_with_check:\nmap 19 :ballot_box_with_check:\nmap 20 :ballot_box_with_check:")
+      "NOOO")
       message.channel.send({embed});
     }
 }
