@@ -31,23 +31,22 @@ bot.on('message', message => {
     }else{
         message.delete();
     }
-    if (message.content === prefix + "trad"){ 
+    if (message.content === prefix + "trad" ){  
+
         const embed = new Discord.RichEmbed()
-        .setTitle("This is your title, it can hold 256 characters")
-        .setAuthor("Author Name", "https://i.imgur.com/lm8s41J.png")
-        .setColor(0x00AE86)
-        .setDescription("This is the main body of text, it can hold 2048 characters.")
-        .setFooter("This is the footer text, it can hold 2048 characters", "http://i.imgur.com/w1vhFSR.png")
-        .setImage("http://i.imgur.com/yVpymuV.png")
-        .setThumbnail("http://i.imgur.com/p2qNFag.png")
-        .setTimestamp()
-        .setURL("https://discord.js.org/#/docs/main/indev/class/RichEmbed")
-        .addField("This is a field title, it can hold 256 characters",
-          "This is a field value, it can hold 1024 characters.")
-        .addField("Inline Field", "They can also be inline.", true)
-        .addBlankField(true)
-        .addField("Inline Field 3", "You can have a maximum of 25 fields.", true);
-       
+        .setTitle("Commande pour le Sigbot")
+        .setColor(0x0086AE)
+        .setDescription("Voici les commande que le bot peu faire :D")
+        .setFooter("Pour plus d'info demander a son créateur :3")
+        .addField("parler lui :D",
+          "(si vous ete chanceux il vous parlera si son créateur est pas loin)")
+          .addField("commande special",
+          "sigbot!ASDF Movie (car c'est drole les ASDF Movie '^')")
+          .addField("commande ~~vraiment~~ utile",
+          "sigbot!xp")
+          .addField("jeux",
+          "G-N start / stop (c'est un jeu ou vous devez deviner un nombre start pour le lancer et stop pour l'areter)")
+      
         message.channel.send({embed});
     }
 }
