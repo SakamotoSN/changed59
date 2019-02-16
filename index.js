@@ -34,10 +34,10 @@ bot.on('message', message => {
 }
 if (message.content.startsWith(prefix + "journal")){
     var embed = new Discord.RichEmbed()
-    .addField("**Transition**", "Voici les Commandes Disponibles !")
-    .addField("```actions```", "```a_calin @mention\na_tue @mention\na_claque @mention\na_embrasse @mention```")
-    .setColor(0x66c2ff)
-    .addField("```Admin```", "```a_warn @mention raison\na_dit message```")
+    .setTitle("Iphone X Demon")
+    .addField("***Journal des Démons du mois de Février***", "...")
+    .addField("Union Upsilon : Extermination par les démons ?", "La semaine dernière , L'Union Upsilon à du faire face au 3 chefs démoniaque !\nLeur chef , Guten , nous explique leur défaite :\n*Nous étions environ 50 000 face à eux ! Notre Union étant l'une des plus puissante , pensions gagner facilement quand les 3 grands chefs démoniaque sont apparus et ont exterminés les*")
+    .setColor(0xD4FE00)
     message.channel.send(embed)
 }
 }  
