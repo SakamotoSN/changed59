@@ -37,9 +37,7 @@ if (message.content.startsWith(prefix + "journal")){
     .setTitle("Iphone X Demon")
     .setColor(0xD4FE00)
     .setDescription("***Journal des Démons du mois de Février***")
-    .addField("Union Upsilon : Extermination par les démons ?",
-              "La semaine dernière , L'Union Upsilon à du faire face au 3 chefs démoniaque !\nLeur chef , Guten , nous explique leur défaite :\n*Nous étions environ 50 000 face à eux ! Notre Union étant l'une des plus puissante , pensions gagner facilement quand les 3 grands chefs démoniaque sont apparus et ont exterminés les*")
-    console.log("journal fait ^^")
-}
+    }
+
 }  
 )
